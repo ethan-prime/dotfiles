@@ -1015,5 +1015,8 @@ require('lazy').setup({
 
 vim.keymap.set('n', '<leader>e', ':Ex<CR>')
 
+vim.opt.termguicolors = true
+
+vim.opt.clipboard = 'unnamedplus'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
