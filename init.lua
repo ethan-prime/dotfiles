@@ -152,9 +152,10 @@ vim.o.splitbelow = true
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
+vim.opt.expandtab = true
 
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
@@ -885,7 +886,7 @@ require('lazy').setup({
     -- change the command in the config to whatever the name of that colorscheme is.
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'shaunsingh/nord.nvim',
+    'valonmulolli/heap.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     config = function()
       ---@diagnostic disable-next-line: missing-fields
@@ -893,9 +894,9 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.g.nord_italic = false
-      vim.g.nord_bold = false
-      vim.cmd.colorscheme 'nord'
+      vim.g.heap_italic = false
+      vim.g.heap_bold = false
+      vim.cmd.colorscheme 'heap'
     end,
   },
 
